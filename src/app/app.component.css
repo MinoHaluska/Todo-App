@@ -1,6 +1,5 @@
 
 .container{
-    /* width: 60%; */
     max-width: 700px;
     margin: 2rem auto;
     background-color: white;
@@ -38,14 +37,10 @@ h1{
     margin-right: 10px;
 }
 
-/* input  */
 .mat-form-field{
     display: block;
     margin-top: 1rem;
 }
-
-
-/* Ulohy */
 
 .todo{
     display: flex;

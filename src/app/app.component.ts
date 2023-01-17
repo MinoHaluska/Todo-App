@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Task } from './task';
 
@@ -36,7 +36,7 @@ export class AppComponent {
     ]
   }
   
-  // Odoslanie Formulara
+  // Send form 
   onSubmit(){
     this.todos.push({
       content: this.toDoForm.value.task,
@@ -46,11 +46,10 @@ export class AppComponent {
     this.toDoForm.reset()
   }
 
-  // Odstranenie ulohy
+  // Delete task
   deleteTask(index: number){
     this.todos = this.todos.filter((v, i) => i !== index)
 
-    // Prebehne pole a spocita kolko je hotovych uloch
     let counterDone = 0
     this.todos.forEach((todo) => {
       if(todo.completed){
@@ -62,7 +61,7 @@ export class AppComponent {
     this.progress = ((this.taskDone / this.todos.length) * 100)
   }
 
-  // Hotovo
+  // Task done
   doneTask(index: number){
     
     this.todos.map((v, i) => {
@@ -72,7 +71,6 @@ export class AppComponent {
       }
     })
 
-    // Splene ulohy
     if(this.todos[index].completed){
       this.taskDone = this.taskDone + 1
       this.progress = ((this.taskDone / this.todos.length) * 100)
@@ -83,7 +81,7 @@ export class AppComponent {
       this.progress = ((this.taskDone / this.todos.length) * 100)
     } 
 
-    // Zmena farieb
+    // Change colors
     if(this.progress < 35){
       return this.color = 'warn'
     } else if(this.progress < 70){
@@ -93,6 +91,7 @@ export class AppComponent {
     }
   }
 
+  // Delete ALL task
   deleteAll(){
     this.todos = []
     this.taskDone = 0

@@ -1,0 +1,98 @@
+
+.container{
+    /* width: 60%; */
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 0.5rem ;
+    overflow: hidden;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px black;
+}
+
+@media (max-width: 750px){
+    .container{
+        width: 97%;
+        margin: 1rem auto;
+    }
+}
+
+h1{
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.state{
+    padding: 1.5rem 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.state p{
+    margin-bottom: 10px;
+}
+
+.mat-raised-button{
+    margin-right: 10px;
+}
+
+/* input  */
+.mat-form-field{
+    display: block;
+    margin-top: 1rem;
+}
+
+
+/* Ulohy */
+
+.todo{
+    display: flex;
+    padding: 10px 15px;
+    background-color: #EEE;
+    border-bottom: 1px solid #DDD;
+    vertical-align: top;
+}
+
+.todo:nth-child(even){
+    background-color: rgb(255, 255, 255);
+}
+
+.todo:last-of-type{
+    border-bottom: none;
+}
+
+.id{
+    flex: 1 1 30px;
+    line-height: 30px;
+}
+
+.todo .content{
+    flex: 1 1 100%;
+    line-height: 30px;
+}
+
+.mat-icon{
+    height: 100%;
+    font-size: 30px;
+}
+
+.mat-icon:hover,
+.mat-icon:focus{
+    cursor: pointer;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.done{
+    font-weight: bold;
+}
+
+.delete-button{
+    margin-top: 1rem;
+}
+
+

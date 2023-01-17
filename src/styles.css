@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body { 
+    height: 100vh;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-image: linear-gradient(to right bottom, #3f51b5, #6c6ec3, #918dd1, #b3aedf, #d4d0ed, #ded2f2, #e8d4f5, #f3d6f8, #fbb2e0, #ff8ab6, #ff627c, #f44336);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
